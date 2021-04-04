@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native'
+import {Text, View, StyleSheet} from 'react-native'
 
 import Oficial, {Comp1, Comp2} from './components/Multi'
 import Primeiro from './components/Primeiro'
 
 export default () => (
-  <View>    
+  <View style={styles.App}>    
 
     <Oficial/>
     <Comp1/>
@@ -13,3 +13,11 @@ export default () => (
     <Primeiro/>
   </View>
 )
+
+const styles = StyleSheet.create({
+  App: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+})

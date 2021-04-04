@@ -1,4 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-export default () => <Text>Primeiro!{1+3} somando usando expressão js</Text>
+import styles from '../common/globalStyle'
+
+export default () => <Text style={styles.fontG}>Primeiro! {1+3} somando usando expressão js</Text>
