@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native'
 
+import Pai from './components/direta/Pai';
 import Contador from './components/Contador'
 import Botao from './components/Botao'
 import TituloFrag from './components/Fragment'
@@ -11,7 +12,7 @@ import Primeiro from './components/Primeiro'
 
 export default () => (
   <View style={styles.App}>    
-    
+    <Pai/>
     
     {/* 
     <Contador inicial={100} passo={15}/>
