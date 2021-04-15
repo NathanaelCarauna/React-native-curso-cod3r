@@ -4,11 +4,13 @@
 		"prefix": "import",
 		"body": [
 			"import React from 'react';",
-			"import { Text,$2} from 'react-native';",
-			"import styles from '$3'",
+			"import { Text,$1} from 'react-native';",
+			"import styles from '../common/globalStyle'",
 			"",
 			"export default props => {",
-			"    <Text style={styles.fontG}>$4</Text>",
+			"    <Text style={styles.fontG}>",
+			"        $2",
+			"    </Text>",
 			"}",
 		],
 		"description": "Import basic react classes"
