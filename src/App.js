@@ -11,9 +11,11 @@ import Primeiro from './components/Primeiro'
 
 export default () => (
   <View style={styles.App}>    
+    
+    
+    {/* 
     <Contador inicial={100} passo={15}/>
     <Contador />
-    {/* 
     <Botao/>
     <TituloFrag principal="Cadastro de produtos" 
       secundario="Tela de cadastro de produtos"/>

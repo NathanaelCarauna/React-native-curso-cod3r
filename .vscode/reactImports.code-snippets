@@ -1,0 +1,16 @@
+{
+	"reactImports": {
+		"scope": "javascript",
+		"prefix": "import",
+		"body": [
+			"import React from 'react';",
+			"import { Text,$2} from 'react-native';",
+			"import styles from '$3'",
+			"",
+			"export default props => {",
+			"    <Text style={styles.fontG}>$4</Text>",
+			"}",
+		],
+		"description": "Import basic react classes"
+	}
+}
