@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native'
+import {Text, StyleSheet, SafeAreaView} from 'react-native'
 
 
+import ParImpar from './components/ParImpar';
 import DiferenciarMob from './components/DiferenciarMob';
 import ContadorV2 from './components/contador/ContadorV2'
 import PaiIndireto from './components/indireta/Pai'
@@ -15,9 +16,10 @@ import Oficial, {Comp1, Comp2} from './components/Multi'
 import Primeiro from './components/Primeiro'
 
 export default () => (
-  <View style={styles.App}>    
-    <DiferenciarMob/>
+  <SafeAreaView style={styles.App}>    
+    <ParImpar num={2}/>
     {/* 
+    <DiferenciarMob/>
     <ContadorV2/>
     <PaiIndireto/>
     <Pai/>
@@ -32,7 +34,7 @@ export default () => (
     <Comp1/>
     <Comp2/>
     <Primeiro/> */}
-  </View>
+  </SafeAreaView>
 )
 
 const styles = StyleSheet.create({
