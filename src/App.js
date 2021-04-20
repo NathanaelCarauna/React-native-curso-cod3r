@@ -2,23 +2,33 @@ import React from 'react';
 import {Text, StyleSheet, SafeAreaView} from 'react-native'
 
 
-import ParImpar from './components/ParImpar';
-import DiferenciarMob from './components/DiferenciarMob';
-import ContadorV2 from './components/contador/ContadorV2'
-import PaiIndireto from './components/indireta/Pai'
-import Pai from './components/direta/Pai';
-import Contador from './components/Contador'
-import Botao from './components/Botao'
-import TituloFrag from './components/Fragment'
-import Aleatorio from './components/Aleatorio'
-import MinMax from './components/MinMax'
-import Oficial, {Comp1, Comp2} from './components/Multi'
 import Primeiro from './components/Primeiro'
+import Oficial, {Comp1, Comp2} from './components/Multi'
+import MinMax from './components/MinMax'
+import Aleatorio from './components/Aleatorio'
+import TituloFrag from './components/Fragment'
+import Botao from './components/Botao'
+import Contador from './components/Contador'
+import Pai from './components/direta/Pai';
+import PaiIndireto from './components/indireta/Pai'
+import ContadorV2 from './components/contador/ContadorV2'
+import DiferenciarMob from './components/DiferenciarMob';
+import ParImpar from './components/ParImpar';
+import Familia from './components/relacao/Familia';
+import Membro from './components/relacao/Membro';
 
 export default () => (
-  <SafeAreaView style={styles.App}>    
-    <ParImpar num={2}/>
+  <SafeAreaView style={styles.App}>   
+    <Familia>
+      <Membro nome='Saravor' sobrenome='Silveira'/>
+      <Membro nome='Rebecor' sobrenome='Silveira'/>
+    </Familia> 
+    <Familia>
+      <Membro nome='Lucas' sobrenome='Santos'/>
+      <Membro nome='Bianca' sobrenome='Santos'/>
+    </Familia> 
     {/* 
+    <ParImpar num={2}/>
     <DiferenciarMob/>
     <ContadorV2/>
     <PaiIndireto/>
