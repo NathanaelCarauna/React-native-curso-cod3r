@@ -18,11 +18,13 @@ import Familia from './components/relacao/Familia';
 import Membro from './components/relacao/Membro';
 import UsuarioLogado from './components/UsuarioLogado';
 import ListaProdutos from './components/produtos/ListaProdutos';
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 
 export default () => (
   <SafeAreaView style={styles.App}>   
-    <ListaProdutos />
+    <ListaProdutosV2 />
     {/* 
+    <ListaProdutos />
     <UsuarioLogado usuario={{nome:'Nathanael', email: 'nathan@email.com'}}/>
     <UsuarioLogado usuario={{email: 'nathan@email.com'}}/>
     <UsuarioLogado usuario={{nome:'Nathanael'}}/>
