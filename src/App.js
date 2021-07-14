@@ -23,11 +23,13 @@ import DigiteSeuNome from './components/DigiteSeuNome';
 import Quadrado from './components/layout/Quadrado';
 import FlexboxV1 from './components/layout/FlexboxV1';
 import FlexboxV2 from './components/layout/FlexboxV2';
+import FlexboxV3 from './components/layout/FlexboxV3';
 
 export default () => (
   <SafeAreaView style={styles.App}>
-    <FlexboxV2 />
+    <FlexboxV3 />
     {/* 
+    <FlexboxV2 />
     <FlexboxV1 />
     <DigiteSeuNome/>
     <ListaProdutosV2 />
