@@ -20,11 +20,16 @@ import UsuarioLogado from './components/UsuarioLogado';
 import ListaProdutos from './components/produtos/ListaProdutos';
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
+import Quadrado from './components/layout/Quadrado';
 
 export default () => (
   <SafeAreaView style={styles.App}>   
-    <DigiteSeuNome/>
+    <Quadrado />
+    <Quadrado cor="#f00"/>
+    <Quadrado cor="#0f0"/>
+    <Quadrado cor="#00f"/>
     {/* 
+    <DigiteSeuNome/>
     <ListaProdutosV2 />
     <ListaProdutos />
     <UsuarioLogado usuario={{nome:'Nathanael', email: 'nathan@email.com'}}/>
