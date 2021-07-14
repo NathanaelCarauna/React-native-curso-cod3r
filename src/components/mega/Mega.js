@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Button, Text, TextInput } from 'react-native';
-import styles from '../../common/globalStyle'
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import stylesGlobal from '../../common/globalStyle'
+import NumeroComponent from './NumeroComponent';
 
 export default class Mega extends Component {
 
@@ -26,10 +27,17 @@ export default class Mega extends Component {
         this.setState({ numeros })
     }
 
+    exibirNumeros = () => {
+        const nums = this.state.numeros
+        return nums.map(n => {
+            return <NumeroComponent num={n} />
+        })
+    }
+
     render() {
         return (
             <>
-                <Text style={styles.fontG}>
+                <Text style={stylesGlobal.fontG}>
                     Gerador de Mega-Sena
                 </Text>
                 <TextInput
@@ -39,11 +47,19 @@ export default class Mega extends Component {
                     value={this.state.qtdNumeros}
                     onChangeText={this.alterarQtdNumeros}
                 />
-                <Button title="Gerar números" onPress={this.gerarNumero}/>
-                <Text >
-                    {this.state.numeros.join(',')}
-                </Text>
+                <Button title="Gerar números" onPress={this.gerarNumero} />
+                <View style={styles.numeroView}>
+                    {this.exibirNumeros()}
+                </View>
             </>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    numeroView: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+    }
+})
