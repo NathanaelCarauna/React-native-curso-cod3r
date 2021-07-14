@@ -1,9 +1,9 @@
 import React from 'react';
-import {Text, StyleSheet, SafeAreaView} from 'react-native'
+import { Text, StyleSheet, SafeAreaView } from 'react-native'
 
 
 import Primeiro from './components/Primeiro'
-import Oficial, {Comp1, Comp2} from './components/Multi'
+import Oficial, { Comp1, Comp2 } from './components/Multi'
 import MinMax from './components/MinMax'
 import Aleatorio from './components/Aleatorio'
 import TituloFrag from './components/Fragment'
@@ -21,13 +21,11 @@ import ListaProdutos from './components/produtos/ListaProdutos';
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
 import Quadrado from './components/layout/Quadrado';
+import FlexboxV1 from './components/layout/FlexboxV1';
 
 export default () => (
-  <SafeAreaView style={styles.App}>   
-    <Quadrado />
-    <Quadrado cor="#f00"/>
-    <Quadrado cor="#0f0"/>
-    <Quadrado cor="#00f"/>
+  <SafeAreaView style={styles.App}>
+    <FlexboxV1 />
     {/* 
     <DigiteSeuNome/>
     <ListaProdutosV2 />
