@@ -7,6 +7,7 @@ export default class Mega extends Component {
         return (
             <Text style={styles.fontG}>
                 Gerador de Mega-Sena
+                {this.props.qtdNumeros}
             </Text>
         )
     }
